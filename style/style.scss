@@ -46,3 +46,46 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
+
+.content {
+    text-align: center;
+    padding: 5em;
+    transition: 1s;
+    height: 100vh;
+}
+
+.btn_icon_header {
+    background-color: transparent;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .btn_icon_header {
+        display: block;
+    }
+
+    .navigation_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: $color-dark5;
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }   
+}
+
+/* ANIMAÇÃO QUE REVELA OU ESCONDE O MENU SIDEBAR*/
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+    to {
+        margin-left: -10vw;
+    }
+}
