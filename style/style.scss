@@ -12,10 +12,6 @@ body {
     color: $color-white;
 }
 
-.img_logo_header {
-    width: 45px;
-}
-
 .header, .navigation_header {
     display: flex;
     align-items: center;
@@ -28,6 +24,11 @@ body {
     height: 3.5em;
     justify-content: space-between;
     padding: 0 10%;
+}
+
+
+.img_logo_header {
+    width: 45px;
 }
 
 .navigation_header {
@@ -75,7 +76,7 @@ body {
         height: 100%;
         width: 35vw;
         padding: 1em;
-        animation-duration: 1s;
+        animation-duration: 0.8s;
         margin-left: -100vw;
     }   
 }
